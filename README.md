@@ -46,13 +46,18 @@ After plotting and modifying your figure, export the figure with `szkGraph.final
 * **pil_kwargs**: _dict, optional_
     Dictionary that will be directly passed to `PIL.Image.Image.save`.
 * **tight**: _bool, optional_
-    Whether to use [`matplotlib.pyplot.tight_layout`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.tight_layout.html).
+    Whether to use [`matplotlib.pyplot.tight_layout()`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.tight_layout.html).
 * **pad**: _float, optional_
-    Padding for [`matplotlib.pyplot.tight_layout`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.tight_layout.html).
+    Padding for [`matplotlib.pyplot.tight_layout()`](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.tight_layout.html).
 * **xspace**: _float or tuple of floats_
     Float for specifying x-tick spacing, tuple of floats for specyfing (x-tick spacing, offset). See [`matplotlib.ticker.MultipleLocator()`](https://matplotlib.org/stable/api/ticker_api.html#matplotlib.ticker.MultipleLocator).
 * **yspace**: _float or tuple of floats_
     Float for specifying y-tick spacing, tuple of floats for specyfing (y-tick spacing, offset). See [`matplotlib.ticker.MultipleLocator()`](https://matplotlib.org/stable/api/ticker_api.html#matplotlib.ticker.MultipleLocator).
+
+### Returns
+* **fig**: _matplotlib.figure_
+* **ax**: _matplotlib.axes_
+
 
 # License
 szkGraph is available under MIT license. See the LICENSE file for more info.
