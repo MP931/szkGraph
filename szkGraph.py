@@ -94,7 +94,7 @@ def finalize(
     fn_figout,
     lims=[None, None, None, None],  # [xmin, xmax, ymin, ymax]
     dpi=300,
-    comp={},
+    pil_kwargs={},
     tight=True,
     pad=0.2,  # padding for tight_layout
     xspace=None,  # float for spacing, tuple for spacing and offset
@@ -121,6 +121,6 @@ def finalize(
     # save fig
     if tight:
         fig.tight_layout(pad=pad)
-    fig.savefig(fn_figout, dpi=dpi, pil_kwargs=comp)
+    fig.savefig(fn_figout, dpi=dpi, pil_kwargs=pil_kwargs)
 
     return fig, ax
