@@ -1,10 +1,10 @@
-import szkGraph
+import szkGraph.formatter as gformat
 
 
 # example 1: plot a simple graph
 def example1():
     # preparation
-    fig, ax = szkGraph.prepare(
+    fig, ax = gformat.prepare(
         xtitle="This is x-axis",
         ytitle="This is y-axis",
         w=6,
@@ -19,7 +19,7 @@ def example1():
 
     # output the graph
     fn_out = "example1.png"
-    szkGraph.finalize(fig, ax, fn_out)
+    gformat.finalize(fig, ax, fn_out)
 
 
 # example 2: modify figure size
@@ -29,7 +29,7 @@ def example2():
     # number of pixels are determined by inches*dpi. default dpi is 300, which is common value for printing.
 
     # preparation
-    fig, ax = szkGraph.prepare(
+    fig, ax = gformat.prepare(
         xtitle="This is x-axis",
         ytitle="This is y-axis",
         w="pp0.3",  # 0.3 of the powerpoint page width
@@ -44,13 +44,13 @@ def example2():
 
     # output the graph
     fn_out = "example2.png"
-    szkGraph.finalize(fig, ax, fn_out)
+    gformat.finalize(fig, ax, fn_out)
 
 
 # example 3: modify axis range and tick interval
 def example3():
     # preparation
-    fig, ax = szkGraph.prepare(
+    fig, ax = gformat.prepare(
         xtitle="This is x-axis",
         ytitle="This is y-axis",
         w=6,
@@ -68,7 +68,7 @@ def example3():
 
     # output the graph
     fn_out = "example3.png"
-    szkGraph.finalize(
+    gformat.finalize(
         fig, ax, fn_out, lims=[-0.5, 5.5, -1, 26], xspace=(1, 0), yspace=(5, 0)
     )
 

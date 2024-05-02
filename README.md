@@ -4,13 +4,18 @@ Any type of suggestions, feedbacks, and upgrades are welcome.
 
 # How to install?
 Install using pip.
+
 `python -m pip install -U szkGraph`
 
-# How to use?
-Call `szkGraph.prepare()` to initialize the figure. Use the returned `fig, ax` for plotting.
-After plotting and modifying your figure, export the figure with `szkGraph.finalize()`. 
+Then, import as follows.
 
-## `szkGraph.prepare(xtitle=None, ytitle=None, w=None, h=None, r=0.7, font="arial", fontsize=20)`
+`import szkGraph.formatter`
+
+# How to use?
+Call `formatter.prepare()` to initialize the figure. Use the returned `fig, ax` for plotting.
+After plotting and modifying your figure, export the figure with `formatter.finalize()`. 
+
+## `formatter.prepare(xtitle=None, ytitle=None, w=None, h=None, r=0.7, font="arial", fontsize=20)`
 ### Paramters
 * **xtitle**: _str, optional_
     Title of x-axis.
@@ -33,7 +38,7 @@ After plotting and modifying your figure, export the figure with `szkGraph.final
 * **ax**: _matplotlib.axes_
 
 
-## `finalize(fig, ax, fn_figout, lims=[None, None, None, None], dpi=300, comp={}, tight=True, pad=0.2, xspace=None, yspace=None)`
+## `formatter.finalize(fig, ax, fn_figout, lims=[None, None, None, None], dpi=300, comp={}, tight=True, pad=0.2, xspace=None, yspace=None)`
 ### Paramters
 * **fig**: _matplotlib.figure_
 * **ax**: _matplotlib.axes_
