@@ -3,8 +3,8 @@ This is a useful Python codes to simply modify the style of matplotlib for your 
 Any type of suggestions, feedbacks, and upgrades are welcome.
 
 # How to install?
-Just download the `szkGraph.py` file on your computer (preferably to the dedicated folder), and import the file to your Python code.
-`example.py` shows you how to import the file even from different directory.
+Install using pip.
+`python -m pip install -U szkGraph`
 
 # How to use?
 Call `szkGraph.prepare()` to initialize the figure. Use the returned `fig, ax` for plotting.

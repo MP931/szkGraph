@@ -1,9 +1,3 @@
-import sys
-
-# when importing the module from different directory, we need to add the directory to the path
-# uncomment the below two lines and change the path to the directory of szkGraph
-# dir_szkGraph = r"C:\USERNAME\Documents\Git\szk-graph"
-# sys.path.append(dir_szkGraph)
 import szkGraph
 
 
